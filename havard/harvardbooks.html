@@ -1,0 +1,964 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap-grid.min.css" rel="stylesheet">
+      <link href="bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/css/bootstrap.min.css" rel="stylesheet">
+      <link href="style.css" rel="stylesheet">
+    <title>Reference It</title>
+  </head>
+  <body>
+      <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div class="container-fluid">
+                <a class="navbar-brand navlink" href="#">ReferenceIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        Referencing Styles
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Harvard</a></li>
+                        <li><a class="dropdown-item" href="#">American Psychological Association (APA)</a></li>
+                          <li><a class="dropdown-item" href="#">Chicago</a></li>
+                          <li><a class="dropdown-item" href="#">Institute of Electrical and Electronics Engineers (IEEE)</a></li>
+                          <li><a class="dropdown-item" href="#">Modern Language Association (MLA)</a></li>
+                          <li><a class="dropdown-item" href="#">Oxford University Standard for the Citation of Legal Authorities (OSCOLA)</a></li>
+                          <li><a class="dropdown-item" href="#">Vancouver</a></li>
+                      </ul>
+                    </li>
+                      <li class="nav-item">
+                      <a class="nav-link" href="#">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link disabled">Disabled</a>
+                    </li>
+                  </ul>
+                  <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                  </form>
+                </div>
+              </div>
+            </nav>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col"></div>
+            <div class="col-11">
+                <div class="card cardstyle">
+                  <div class="card-body">
+                      <h1>Harvard Referencing Style</h1>
+      
+                          <h2>Books</h2>
+                          <p>This includes printed books, reprint and facsimile editions, ebooks, audiobooks, historical books in an online collection, ancient text, pages extracted from authored book, chapters/sections from edited books, lines within plays, biblography, and sacred texts.</p>
+
+                         <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="books" name="selectbook" onchange="showDiv(this)">
+                              <option selected>Open this select type of book</option>
+                              <option value="1">Printed Book</option>
+                              <option value="2">Reprint and Facsimile Edition</option>
+                              <option value="3">Ebook</option>
+                              <option value="4">Audiobooks</option>
+                              <option value="5">Historical book in an online collection</option>
+                              <option value="6">Ancient Text</option>
+                              <option value="7">Pages extracted from authored book</option>
+                              <option value="8">Chapters/Sections from edited book</option>
+                              <option value="9">Lines within a play</option>
+                              <option value="10">Biblography</option>
+                              <option value="11">Sacred Text</option>
+                            </select>
+
+
+
+                          <!--  #####Printed Book   ####-->
+                       
+                      <div  id="printedbooks" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorprinted">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstprinted[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middleprinted[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastprinted[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowprinted" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowprinted">
+                                <button id="addRowprinted" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearprinted" placeholder="Enter the Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titleprinted" placeholder="Enter the Book title">
+                            </div>
+
+                          <h3>Edition</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="editionprinted" placeholder="Enter the Edition number">
+                            </div>
+                          
+                          <h3>Editor</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="editorprinted" placeholder="Enter the Editor">
+                            </div>
+
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationprinted" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherprinted" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Series and Volume Number</h3>
+                          <div class="mb-3">
+                              <input type="series" class="form-control" id="seriesprinted" placeholder="Enter the Series/Volume number">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefprinted" onclick="harvardrefprinted()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      <!--Reprint and Facsimile Edition-->
+                      <div id="reprintedition" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorreprint">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstreprint[]" class="form-control" id="firstreprint" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middlereprint[]" class="form-control" id="middlereprint" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastreprint[]" class="form-control" id="lastreprint" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowreprint" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowreprint">
+                                <button id="addRowreprint" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Original Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearorigianlreprint" placeholder="Enter the Year of original publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titlereprint" placeholder="Enter the Book title">
+                            </div>
+
+                          <h3>Reprint or Facsimile of ...</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="reprintof" placeholder="Enter the Reprint or Facsimile of ...">
+                            </div>
+                          
+
+                          <h3>Place of Reprint/Facsimile and Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationreprint" placeholder="Enter the Place of Publication of Reprint/Facsimile">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherreprint" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Reprint/Facsimile</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearreprint" placeholder="Enter the Year of Reprint/Facsimile">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefreprint" onclick="harvardrefreprint()">ReferenceIT</button>
+                          </div>
+                      </div>
+                      
+                      
+                      
+                      
+                      
+                      <!--  #####EBook   ####-->
+                       
+                      <div  id="ebook" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorebook">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstebook[]" class="form-control" id="firstebook" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middleebook[]" class="form-control" id="middleebook" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastebook[]" class="form-control" id="lastebook" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowebook" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowebook">
+                                <button id="addRowebook" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearebook" placeholder="Enter the Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titleebook" placeholder="Enter the EBook title">
+                            </div>
+
+
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationebook" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherebook" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+                          
+                          <h3>DOI/URL</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="doiebook" placeholder="Enter the DOI/URL">
+                            </div>
+
+                          
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefebook" onclick="harvardrefebook()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                      
+                        <!--  #####Audio Book   ####-->
+                       
+                      <div  id="audiobooks" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authoraudio">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstaudio[]" class="form-control" id="firstaudio" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middleaudio[]" class="form-control" id="middleaudio" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastaudio[]" class="form-control" id="lastaudioaudio" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowaudio" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowaudio">
+                                <button id="addRowaudio" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication/Release</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearaudio" placeholder="Enter the Year of publication/Release">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titleaudio" placeholder="Enter the Audio Book title">
+                            </div>
+
+                          <h3>Narrated By</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="narratedaudio" placeholder="Enter who narrated the Audiobook">
+                            </div>
+                          
+                          <h3>URL</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="urlaudio" placeholder="Enter the URL">
+                            </div>
+
+
+                          <h3>Accessed Date</h3>
+                          <div class="mb-3">
+                              <input type="series" class="form-control" id="accesseddate" placeholder="Enter the Accessed Date">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefaudio" onclick="harvardrefaudio()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                        
+                      
+                      <!--  #####Historical Books in Online Collections   ####-->
+                       
+                      <div  id="historicalbooks" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorhistorical">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firsthistorical[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middlehistorical[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lasthistorical[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowhistorical" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowhistorical">
+                                <button id="addRowhistorical" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearhistorical" placeholder="Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titlehistorical" placeholder="Book title">
+                            </div>
+
+                          <h3>Place of Publication: Printing Statement</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationhistorical" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="printingstatement" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefhistorical" onclick="harvardrefhistorical()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      <!--  #####Ancient Text  ####-->
+                       
+                      <div  id="ancienttext" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorancient">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstancient[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middleancient[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastancient[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowancient" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowancient">
+                                <button id="addRowancient" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearancient" placeholder="Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titleancient" placeholder="Book title">
+                            </div>
+                          
+                          <h3>Translated From</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="translatedfrom" placeholder="Editor">
+                            </div>
+
+                          <h3>Edition (if not first)</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="editionancient" placeholder="Edition number">
+                            </div>
+                          
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationancient" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherancient" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Series and Volume Number</h3>
+                          <div class="mb-3">
+                              <input type="series" class="form-control" id="seriesancient" placeholder="Series/Volume number">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefancient" onclick="harvardrefancient()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      
+                      <!--  #####Pages extracted from authored books ####-->
+                       
+                      <div  id="pagesextracted" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorpagesextract">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstpagesextract[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middlepagesextract[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastpagesextract[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowpagesextract" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowpagesextract">
+                                <button id="addRowpagesextract" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearpagesextract" placeholder="Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titlepagesextract" placeholder="Book title">
+                            </div>
+
+                          
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationpagesextract" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherpagesextract" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Extracted Page Number(s)</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="pagenumberpagesextract" placeholder="Extracted Page Number(s)">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefpagesextract" onclick="harvardrefpagesextract()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                      
+                      
+                      
+                      
+                      <!--  #####Chapter/Section of edited books  ####-->
+                       
+                      <div  id="chapteredited" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorchapter">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstchapter[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middlechapter[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastchapter[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowchapter" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowchapter">
+                                <button id="addRowchapter" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearchapter" placeholder="Enter Year of publication">
+                            </div>
+                          
+                          <h3>Title of Chapter/Section</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titlechapter" placeholder="Enter the Chapter title">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titlebook" placeholder="Enter Book title">
+                            </div>
+
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationchapter" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherchapter" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Page Number(s)</h3>
+                          <div class="mb-3">
+                              <input type="series" class="form-control" id="pagenumberchapter" placeholder="Enter the Page Number(s)">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefchapter" onclick="harvardrefchapter()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                      
+                       <!--  ##### Lines Within Plays  ####-->
+                       
+                      <div  id="plays" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorplay">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstplay[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middleplay[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastplay[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowplay" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowplay">
+                                <button id="addRowplay" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearplay" placeholder="Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titleplay" placeholder="Book title">
+                            </div>
+
+                          <h3>Edition Information</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="editioninfo" placeholder="Enter the Edition Information">
+                            </div>
+
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationplay" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherplay" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Act/Scene/Line</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="actplay" placeholder="Enter the Act">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="sceneplay" placeholder="Enter the Scene">
+                              </div>
+                            </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="lineplay" placeholder="Enter the Line Number">
+                              </div>
+                            </div>
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefplay" onclick="harvardrefplay()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                       <!--  ##### Biblography  ####-->
+                       
+                      <div  id="biblography" style="display: none">
+                            <h3>Author(s)/Editor(s)</h3>
+                                <div class="row" id="authorbiblography">
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="firstbiblography[]" class="form-control" id="first" placeholder="First Name" autocomplete="off">
+                            </div>
+                              </div>
+                                <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="middlebiblography[]" class="form-control" id="middle" placeholder="Middle Name" autocomplete="off">
+                            </div>
+                              </div>
+                              <div class="col">
+                                <div class="mb-3">
+                              <input type="text" name="lastbiblography[]" class="form-control" id="last" placeholder="Last Name" autocomplete="off">
+                            </div>
+                                    </div>
+                            <div class="input-group-append col">                
+                                <button id="removeRowbiblography" type="button" class="btn btn-danger">Remove Name</button>
+                            </div>
+                            </div>
+                          <div class="row">
+                              <div class="col-2">
+                            <div id="newRowbiblography">
+                                <button id="addRowbiblography" type="button" class="btn btn-info add_new_frm_field_btn">Add Name</button>
+                            </div>
+                            </div>
+                            </div>
+
+                          <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearbiblography" placeholder="Enter the Year of publication">
+                            </div>
+
+                          <h3>Title</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="titlebiblography" placeholder="Enter the Book title">
+                            </div>
+
+                          <h3>Edition</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="editionbiblography" placeholder="Enter the Edition number">
+                            </div>
+
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationbiblography" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherbiblography" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <h3>Series and Volume Number</h3>
+                          <div class="mb-3">
+                              <input type="series" class="form-control" id="seriesbiblography" placeholder="Enter the Series/Volume number">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefbiblography" onclick="harvardrefbiblography()">ReferenceIT</button>
+                          </div>
+                        </div>
+                      
+                       <!--  #####Sacred Text  ####-->
+                       
+                      <div  id="Sacred" style="display: none">
+                          <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" id="sacredbooks" name="sacredbooks" onchange="showSacred(this)">
+                              <option selected>Select Sacred Book</option>
+                              <option value="1">The Quran</option>
+                              <option value="2">The Bible</option>
+                              <option value="3">The Torah</option>
+                            </select>
+                          
+                            <div id="quran" style="display: none">
+                              <h3>Surah (or Chapter)/ Verse</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="surahquran" placeholder="Enter the Surah (or Chapter)">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="versequran" placeholder="Enter the Verse">
+                              </div>
+                            </div>
+                            </div>  
+                                
+                                <h3>Year of Publication</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="yearquran" placeholder="Year of publication">
+                            </div>
+
+                          <h3>Translated By</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="translatedquran" placeholder="Translated By">
+                            </div>
+
+                          <h3>Place of Publication/Publisher</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="placeofpublicationquran" placeholder="Enter the Place of Publication">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="publisherquran" placeholder="Enter the Publisher">
+                              </div>
+                            </div>
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefquran" onclick="harvardrefquran()">ReferenceIT</button>
+                          </div>
+                        </div>
+                          
+                          <div id="bible" style="display: none">
+                            <h3>Book in Bible</h3>
+                            <div class="mb-3">
+                              <input type="text" class="form-control" id="bookinbible" placeholder="Book in Bible">
+                            </div>
+                              
+                              <h3>Chapter/ Verse</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="chapterinbible" placeholder="Enter the Chapter">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="versebible" placeholder="Enter the Verse">
+                              </div>
+                            </div>
+                            </div>  
+                                
+                                <h3>Version of the Bible</h3>
+                          <div class="mb-3">
+                              <input type="text" class="form-control" id="versionbible" placeholder="Version of the Bible">
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardrefbible" onclick="harvardrefbible()">ReferenceIT</button>
+                          </div>
+                        </div>
+                          
+                          <div id="torah" style="display: none">
+                              <h3>Book</h3>
+                            <div class="mb-3">
+                              <input type="text" class="form-control" id="torahbook" placeholder="Book">
+                            </div>
+                              <h3>Chapter/ Verse</h3>
+                          <div class="row">
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="chapterintorah" placeholder="Enter the Chapter">
+                              </div>
+                             </div>
+                              <div class="col">
+                                  <div class="mb-3">
+                                <input type="text" class="form-control" id="versetorah" placeholder="Enter the Verse">
+                              </div>
+                            </div>
+                            </div>
+
+                          <div class="col-auto">
+                            <button type="submit" class="btn btn-primary" id="havardreftorah" onclick="harvardreftorah()">ReferenceIT</button>
+                          </div>
+                        </div>
+                          
+                          
+                          
+                          </div>
+
+                          
+                      
+                      
+                      
+                      
+                      
+                      
+                        <br>
+                      <br>
+                      <p id="havardoutput"></p>
+           
+                    
+                    
+            
+            
+            </div>
+           
+          </div>
+      
+      </div>
+          </div>
+      </div>
+
+      
+
+      <script src="harvardbooksjs.js"></script>
+      
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrapas Bundle with Popper -->
+    <script src="bootstrap-5.1.3-dist/bootstrap-5.1.3-dist/js/bootstrap.min.js"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
