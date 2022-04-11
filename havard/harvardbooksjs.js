@@ -204,7 +204,7 @@ addNameprinted.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstprinted[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -219,7 +219,7 @@ addNameprinted.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middleprinted[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -230,7 +230,7 @@ addNameprinted.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastprinted[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -279,7 +279,7 @@ addNamereprint.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstreprint[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -294,7 +294,7 @@ addNamereprint.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middlereprint[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -305,7 +305,7 @@ addNamereprint.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastreprint[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -354,7 +354,7 @@ addNameebook.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstebook[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -369,7 +369,7 @@ addNameebook.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middleebook[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -380,7 +380,7 @@ addNameebook.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastebook[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -429,7 +429,7 @@ addNameaudio.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstaudio[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -444,7 +444,7 @@ addNameaudio.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middleaudio[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -455,7 +455,7 @@ addNameaudio.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastaudio[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -504,7 +504,7 @@ addNamehistorical.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firsthistorical[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -519,7 +519,7 @@ addNamehistorical.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middlehistorical[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -530,7 +530,7 @@ addNamehistorical.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lasthistorical[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -563,7 +563,7 @@ removeNamehistorical.onclick = function(){
 
 // add and remove authorancient authours name
 
-var inputNamesancientancient = document.getElementById('authorancient');
+var inputNamesancient = document.getElementById('authorancient');
 var addNameancient = document.getElementById('newRowancient');
 var removeNameancient = document.getElementById('removeRowancient');
 
@@ -579,7 +579,7 @@ addNameancient.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstancient[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -594,7 +594,7 @@ addNameancient.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middleancient[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -605,7 +605,7 @@ addNameancient.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastancient[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -654,7 +654,7 @@ addNamepagesextract.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstpagesextract[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -669,7 +669,7 @@ addNamepagesextract.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middlepagesextract[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -680,7 +680,7 @@ addNamepagesextract.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastpagesextract[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -729,7 +729,7 @@ addNamechapter.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstchapter[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -744,7 +744,7 @@ addNamechapter.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middlechapter[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -755,7 +755,7 @@ addNamechapter.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastchapter[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -804,7 +804,7 @@ addNameplay.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstplay[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -819,7 +819,7 @@ addNameplay.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middleplay[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -830,7 +830,7 @@ addNameplay.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastplay[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -879,7 +879,7 @@ addNamebiblography.onclick = function(){
     
     var firstName = document.createElement('input');
     firstName.setAttribute('type', 'text');
-    firstName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    firstName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     firstName.setAttribute('name', 'firstrbiblography[]');
     firstName.setAttribute('class', 'form-control');
     firstName.setAttribute('id', 'first');
@@ -894,7 +894,7 @@ addNamebiblography.onclick = function(){
     
     var middleName = document.createElement('input');
     middleName.setAttribute('type', 'text');
-    middleName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    middleName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     middleName.setAttribute('name', 'middlerbiblography[]');
     middleName.setAttribute('class', 'form-control');
     middleName.setAttribute('id', 'middle');
@@ -905,7 +905,7 @@ addNamebiblography.onclick = function(){
     
     var lastName = document.createElement('input');
     lastName.setAttribute('type', 'text');
-    lastName.setAttribute('style', 'width:23%;margin:0px 12px 15px 12px');
+    lastName.setAttribute('style', 'width:31.25%;margin:0px 12px 15px 12px');
     lastName.setAttribute('name', 'lastrbiblography[]');
     lastName.setAttribute('class', 'form-control');
     lastName.setAttribute('id', 'last');
@@ -940,7 +940,7 @@ removeNamebiblography.onclick = function(){
 // show result
 
 
-var ref = "the reference is :";
+var ref = "";
 
 function harvardrefprinted() {
     var firstnameprinted = document.getElementsByName('firstprinted[]');
@@ -1123,6 +1123,7 @@ function harvardrefprinted() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
+    document.getElementById('displayref').style.display = "block";
     
 }
 
@@ -1133,11 +1134,11 @@ function harvardrefreprint() {
     var firstname = document.getElementsByName('firstreprint[]');
     var middlename = document.getElementsByName('middlereprint[]');
     var lastname = document.getElementsByName('lastreprint[]');
-    var yearoriginal = document.getElementById('yearorigianlreprint').value;
-    var title = document.getElementById('titlereprint').value;
+    var yearorigianlreprint = document.getElementById('yearorigianlreprint').value;
+    var titlereprint = document.getElementById('titlereprint').value;
     var reprintof = document.getElementById('reprintof').value;
-    var placeofpublication = document.getElementById('placeofpublication').value;
-    var publisher = document.getElementById('publisherreprint').value;
+    var placeofpublicationreprint = document.getElementById('placeofpublicationreprint').value;
+    var publisherreprint = document.getElementById('publisherreprint').value;
     var yearreprint = document.getElementById('yearreprint').value;
     
     //the authors name
@@ -1238,14 +1239,6 @@ function harvardrefreprint() {
     }
     
     
-//    for (var i = 0; i < firstname.length; i++){
-//        var a = firstname[i];
-//        var b = middlename[i];
-//        var c = lastname[i];
-//        ref = ref + c.value.charAt(0).toUpperCase() + c.value.slice(1) + ", " + a.value.charAt(0).toUpperCase() + ". " + b.value.charAt(0).toUpperCase() + "., ";
-//    } 
-    
-    
     //### Year of publication
     
     if (yearorigianlreprint != "") {
@@ -1264,17 +1257,12 @@ function harvardrefreprint() {
         ref = ref;
     }
     
-    //edition
-    if (reprintof != "") {
-        if (reprintof == "1") {
-            ref = ref + reprintof + " ";
-        }
-        else if (reprintof == "2") {
-            ref = ref + reprintof + " ";
-        }
+    //reprint of
+    if (document.getElementById('reprintradio').checked) {
+        ref = ref + "Reprint. " + reprintof + " ";
     }
-        else if (reprintof == "") {
-        ref = ref;
+    else if (document.getElementById('facsimileradio').checked) {
+        ref = ref + "Facsimile of " + reprintof + " ";
     }
     
         
@@ -1297,7 +1285,7 @@ function harvardrefreprint() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 //ebooks
@@ -1457,7 +1445,7 @@ function harvardrefebook() {
     
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -1623,7 +1611,7 @@ function harvardrefaudio() {
     
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -1774,7 +1762,7 @@ function harvardrefhistorical() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -1964,7 +1952,7 @@ function harvardrefancient() {
     
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -2123,7 +2111,7 @@ function harvardrefpagesextract() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -2290,7 +2278,7 @@ function harvardrefchapter() {
     
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -2651,7 +2639,7 @@ function harvardrefbiblography() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -2716,7 +2704,7 @@ function harvardrefquran() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 
@@ -2766,7 +2754,7 @@ function harvardrefbible() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
-    
+    document.getElementById('displayref').style.display = "block";
 }
 
 function harvardreftorah() {
@@ -2801,5 +2789,27 @@ function harvardreftorah() {
         }
     
     document.getElementById("havardoutput").innerHTML = ref;
+    document.getElementById('displayref').style.display = "block";
     
 }
+
+
+function copyElementText(id) {
+    var copyref = document.getElementById('havardoutput').innerText;
+    var elem = document.createElement("textarea");
+    document.body.appendChild(elem);
+    elem.value = copyref;
+    elem.select();
+    document.execCommand("copy");
+    document.body.removeChild(elem);
+    
+    document.getElementById("copyref").innerText = 'Copied';
+    document.getElementById("copyref").style.backgroundColor = 'gray';
+    document.getElementById("copyref").style.borderColor = 'gray';
+}
+
+
+
+
+
+
